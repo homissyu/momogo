@@ -189,3 +189,19 @@ TypeError: Router.use() requires a middleware function but got a Object
     at Module.load (internal/modules/cjs/loader.js:933:32)
     at Function.Module._load (internal/modules/cjs/loader.js:774:14)
 2022-07-21T08:00:51.710Z [MOMOGO_file] info: (app.js:55) Listening on port 3000...
+2022-07-21T08:37:28.483Z [MOMOGO_file] info: (app.js:55) Listening on port 3000...
+2022-07-21T08:37:44.211Z [MOMOGO_file] error: (app.js:59) Cannot find module 'ejs'
+Require stack:
+- C:\Users\homis\momogo\node_modules\express\lib\view.js
+- C:\Users\homis\momogo\node_modules\express\lib\application.js
+- C:\Users\homis\momogo\node_modules\express\lib\express.js
+- C:\Users\homis\momogo\node_modules\express\index.js
+- C:\Users\homis\momogo\app.js
+2022-07-21T08:38:18.866Z [MOMOGO_file] error: (app.js:59) Cannot find module 'ejs'
+Require stack:
+- C:\Users\homis\momogo\node_modules\express\lib\view.js
+- C:\Users\homis\momogo\node_modules\express\lib\application.js
+- C:\Users\homis\momogo\node_modules\express\lib\express.js
+- C:\Users\homis\momogo\node_modules\express\index.js
+- C:\Users\homis\momogo\app.js
+2022-07-21T08:39:02.142Z [MOMOGO_file] info: (app.js:55) Listening on port 3000...

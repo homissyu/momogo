@@ -35,5 +35,4 @@ datum.getData = function (req, res){
     });
 };
 
-
 module.exports = datum.getData;
