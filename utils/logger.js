@@ -15,14 +15,14 @@ const options = {
   // log파일
   file: {
     level: 'info',
-    filename: `${appRoot}/logs/korda.gb.log`, // 로그파일을 남길 경로
+    filename: `${appRoot}/logs/momogo.log`, // 로그파일을 남길 경로
     handleExceptions: true,
     json: false,
     maxsize: 5242880, // 5MB
     maxFiles: 5,
     colorize: true,
     format: combine(
-      label({ label: 'KorDA_GB' }),
+      label({ label: 'MOMOGO_file' }),
       timestamp(),
       myFormat    // log 출력 포맷
     )
@@ -34,7 +34,7 @@ const options = {
     json: false, // 로그형태를 json으로도 뽑을 수 있다.
     colorize: true,
     format: combine(
-      label({ label: 'KorDA_GB' }),
+      label({ label: 'MOMOGO_console' }),
       timestamp(),
       myFormat
     )

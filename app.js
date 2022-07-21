@@ -47,6 +47,7 @@ app.all('/img/*',function(req,res,next){
     res.set('Cache-Control', 'public, max-age=31557600');
     next();
 });
+
 app.use("/", require(__dirname+PUB_VER+"/server/index"));
 
 //listen
