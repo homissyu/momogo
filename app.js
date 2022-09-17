@@ -49,6 +49,7 @@ app.all('/img/*',function(req,res,next){
 });
 
 app.use("/", require(__dirname+PUB_VER+"/server/index"));
+app.use("/getData", require(__dirname+PUB_VER+"/api/getData"));
 
 //listen
 app.listen(PORT, function(){

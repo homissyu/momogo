@@ -1,37 +1,57 @@
 'use strict'
-const request = require('request');
+
+const cheerio = require("cheerio");
+const request = require('request-promise');
+
 const async = require('async');
+
 const logger = require('../utils/logger');
-const { application } = require('express');
-//const getConnection = require('../config/db');
-console.log("test");
+
+const kcsOption = { 
+    url:'https://gss.korea.ac.kr/ime/commu/notice.do'
+};
+
+let lastNo;
+
+async function getNewItem() {
+    return new Promise(function(resolve, reject){
+        resolve(
+           request(kcsOption).then(function (html) {
+
+                const $ = cheerio.load(html);
+                
+                const $table = $('div.t_list test20200330');
+
+                lastNo = $table.children('table').eq(0).children('tbody').eq(0).children(' ').eq(0).children('td').eq(0).text().trim();
+
+            })
+            
+        ).reject(new Error('fail')).catch(() => {if(!response.socket.destroyed) response.socket.destroy();});
+    });
+}
 
 let datum = {};
 datum.getData = function (req, res){
     let ret = [];
     async.waterfall([
-        // function(callback) {
-        //     callback(null, initValue());
-        // },
-        // function(callback) {
-        //     callback(null, getYt());
-        // },
-        // function(arg, callback) {
-        //     callback(null, getReviewList());
-        // },
-        // function(arg, callback) {
-        //     callback(null, getLocationInfo());
-        // }
+        function(callback) {
+            callback(null, getNewItem());
+        }
     ], function (err, result) {
         if(err){
             logger.error(err);
             res.socket.destroy();
             throw err;
         }else {
-          res.set('Cache-Control', 'public, max-age=31557600');
-          res.render('index');
+            let data;
+            // console.log("values[i]:"+values[i]);
+            data = {
+                "lastNo":lastNo
+            }
+            ret.push(data);
+            res.render('apiWraper', {ret:ret});
             
-        }  // 7
+        } 
     });
 };
 

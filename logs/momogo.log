@@ -205,3 +205,102 @@ Require stack:
 - C:\Users\homis\momogo\node_modules\express\index.js
 - C:\Users\homis\momogo\app.js
 2022-07-21T08:39:02.142Z [MOMOGO_file] info: (app.js:55) Listening on port 3000...
+2022-07-22T00:05:51.290Z [MOMOGO_file] info: (app.js:55) Listening on port 3000...
+2022-07-27T07:50:42.440Z [MOMOGO_file] error: uncaughtException: Cannot find module 'cheerio'
+Require stack:
+- C:\Users\homis\momogo\api\getData.js
+- C:\Users\homis\momogo\app.js
+Error: Cannot find module 'cheerio'
+Require stack:
+- C:\Users\homis\momogo\api\getData.js
+- C:\Users\homis\momogo\app.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:885:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:730:27)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (C:\Users\homis\momogo\api\getData.js:3:17)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+2022-07-27T07:54:56.860Z [MOMOGO_file] error: uncaughtException: Cannot find module 'request-promise'
+Require stack:
+- C:\Users\homis\momogo\api\getData.js
+- C:\Users\homis\momogo\app.js
+Error: Cannot find module 'request-promise'
+Require stack:
+- C:\Users\homis\momogo\api\getData.js
+- C:\Users\homis\momogo\app.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:885:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:730:27)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (C:\Users\homis\momogo\api\getData.js:4:17)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+2022-07-27T07:56:11.227Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-07-27T07:58:23.289Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-07-27T07:59:02.043Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-07-27T08:00:07.180Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-07-27T08:02:30.534Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-07-27T08:03:05.627Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-07-27T08:10:45.272Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-07-27T08:14:41.783Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-07-27T08:17:53.774Z [MOMOGO_file] error: uncaughtException: fetch is not defined
+ReferenceError: fetch is not defined
+    at Object.<anonymous> (C:\Users\homis\momogo\api\getData.js:10:1)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (C:\Users\homis\momogo\app.js:52:21)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+2022-07-27T08:18:14.896Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-07-27T08:31:44.449Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-07-27T08:57:47.410Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-07-27T08:58:46.554Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-07-27T09:00:14.578Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-07-27T09:04:11.630Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-07-27T09:04:27.978Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-07-27T09:16:36.932Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-07-27T09:18:37.144Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-07-27T09:19:03.093Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-07-27T09:22:41.816Z [MOMOGO_file] error: uncaughtException: Unexpected token ','
+C:\Users\homis\momogo\api\getData.js:15
+        'Accept-Encoding: gzip, deflate, br',
+                                            ^
+
+SyntaxError: Unexpected token ','
+    at wrapSafe (internal/modules/cjs/loader.js:984:16)
+    at Module._compile (internal/modules/cjs/loader.js:1032:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (C:\Users\homis\momogo\app.js:52:21)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+2022-07-27T09:23:41.414Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-08-04T07:53:57.792Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-08-21T14:20:36.410Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-08-21T14:29:51.312Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-08-21T14:30:53.278Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-08-21T14:39:10.026Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-08-25T06:17:51.461Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
+2022-08-31T07:43:46.675Z [MOMOGO_file] info: (app.js:56) Listening on port 3000...
